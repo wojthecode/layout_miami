@@ -1,0 +1,9 @@
+@import './utils';
+// @import './fonts';
+// @import './typography';
+@import './blocks';
+
+body {
+  background: $main-bgcolor;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+}

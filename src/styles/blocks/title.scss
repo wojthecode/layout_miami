@@ -1,0 +1,17 @@
+@use '../utils/vars';
+
+.title {
+  font-weight: 800;
+  font-style: italic;
+  font-size: 32px;
+  letter-spacing: -1.5px;
+  color: vars.$main-font;
+  line-height: 100%;
+
+  &--main {
+    display: block;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+  }
+}

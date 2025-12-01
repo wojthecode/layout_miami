@@ -1,0 +1,39 @@
+@use '../utils/vars';
+
+
+.product {
+
+  // border: 1px solid red;
+  // display: flex;
+  // width: 280px;
+  // min-height: 400px;
+  max-width: 400px;
+  // margin-bottom: 40px;
+  // align-content: end;
+
+  font-size: 16px;
+  text-decoration: none;
+  color: vars.$main-font;
+  font-weight: 700;
+
+  &__image {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    color: vars.$main-font;
+    text-decoration: none;
+  }
+
+  &__description {
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  &__link:hover {
+    text-decoration: underline;
+  }
+}

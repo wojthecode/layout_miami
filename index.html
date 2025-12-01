@@ -6,10 +6,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Miami</title>
+    <link rel="shortcut icon" href="./src/images/favicon.ico" type="image/x-icon">
+    <title>BOSE</title>
     <link
       rel="stylesheet"
-      href="src/styles/main.scss"
+      href="src/styles/styles.scss"
     />
     <script
       src="src/scripts/main.js"
@@ -17,6 +18,83 @@
     ></script>
   </head>
   <body>
-    <h1>Miami</h1>
+    <header class="header">
+
+      <img
+        src="./src/images/sound_waves.svg"
+        alt="sound waves"
+        class="header__image"
+      />
+
+      <h1 class="title">
+        The world shades.
+        <br>
+        Your music shines.
+      </h1>
+
+    </header>
+
+    <main class="main">
+      <h2 class="title title--main">
+        Recommended
+      </h2>
+
+      <section class="main__section main__section--recomendet">
+        <div class="product">
+          <img
+            src="./src/images/products/portable_smart.png"
+            alt="Bose portable Smart speaker"
+            class="product__image"
+          />
+          <p>
+          <a href="#" class="product__link">
+          Bose portable Smart speaker
+          </a></p>
+          <p class="product__description">Smart home</p>
+          <p class="product__price">$ 399.00</p>
+        </div>
+
+        <div class="product">
+          <img
+            src="./src/images/products/soundlink_flex.png"
+            alt="SoundLink Flex Bluetooth speaker"
+            class="product__image"
+          />
+          <a href="#" class="product__link">
+          SoundLink Flex Bluetooth speaker
+          </a>
+          <p class="product__description">Portable bluetooth</p>
+          <p class="product__price">$ 149.00</p>
+        </div>
+
+        <div class="product">
+          <img
+            src="./src/images/products/soundlink_color.png"
+            alt="SoundLink Color Bluetooth"
+            class="product__image"
+          />
+          <a href="#" class="product__link">
+          SoundLink Color Bluetooth
+          </a>
+          <p class="product__description">Portable bluetooth</p>
+          <p class="product__price">$ 129.00</p>
+        </div>
+      </section>
+
+      <!-- <h2 class="title title--main">
+        Browse Bose
+        <br>
+        products by category
+      </h2>
+
+      <section class="main__section main__section--categories">
+
+
+
+      </section> -->
+
+    </main>
+
+
   </body>
 </html>
