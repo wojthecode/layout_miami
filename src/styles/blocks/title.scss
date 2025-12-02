@@ -7,11 +7,16 @@
   letter-spacing: -1.5px;
   line-height: 100%;
 
-  &--main {
+  &__main {
     display: block;
     font-weight: 700;
     font-style: normal;
     text-align: center;
+
+    &--left {
+      text-align: left;
+      align-self: flex-start;
+    }
   }
 
   &--header::before {
