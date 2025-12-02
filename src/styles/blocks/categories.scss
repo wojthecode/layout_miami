@@ -1,0 +1,37 @@
+.categories {
+  box-sizing: border-box;
+  display: grid;
+  grid-template: 'pic_left pic_right' auto 'txt txt' auto / minmax(100px, 200px) minmax(
+      100px,
+      200px
+    );
+  column-gap: 20px;
+  padding: 0;
+
+  &__picture {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    min-height: 100px;
+    background-size: cover;
+    background-position: center;
+
+    &--left {
+      grid-area: pic_left;
+    }
+    &--right {
+      grid-area: pic_right;
+    }
+
+    @for $pic from 1 through 6 {
+      &--0#{$pic} {
+        background-image: url('../images/photos/small_0#{$pic}.jpg');
+      }
+    }
+  }
+
+  &__name {
+    grid-area: txt;
+    font-weight: 700;
+    margin-top: 1em;
+  }
+}

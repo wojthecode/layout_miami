@@ -5,7 +5,6 @@
   font-style: italic;
   font-size: 32px;
   letter-spacing: -1.5px;
-  color: vars.$main-font;
   line-height: 100%;
 
   &--main {
@@ -13,5 +12,13 @@
     font-weight: 700;
     font-style: normal;
     text-align: center;
+  }
+
+  &--header::before {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 58px;
+    background-image: url('../images/sound_waves.svg');
   }
 }
