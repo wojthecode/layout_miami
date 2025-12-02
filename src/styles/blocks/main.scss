@@ -19,6 +19,10 @@
     &--buy-direct {
       gap: 20px;
     }
+
+    &--contact {
+      width: 100%;
+    }
   }
 
   &__link {
@@ -36,7 +40,8 @@
     border-radius: 40px;
     font-weight: 700;
     text-decoration: none;
-    line-height: 56px;
+    height: 56px;
+    line-height: 50px;
     border: 3px solid vars.$main-font;
     background-color: vars.$main-font;
     color: vars.$main-bgcolor;
