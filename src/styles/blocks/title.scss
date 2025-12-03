@@ -19,11 +19,13 @@
     }
   }
 
-  &--header::before {
-    content: '';
-    display: block;
-    width: 48px;
-    height: 58px;
-    background-image: url('../images/sound_waves.svg');
+  &--header {
+    &::before {
+      content: '';
+      display: block;
+      width: 48px;
+      height: 58px;
+      background-image: url('../images/sound_waves.svg');
+    }
   }
 }

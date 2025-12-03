@@ -1,0 +1,42 @@
+@use '../utils/vars';
+
+.menu {
+  min-height: 100vh;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background-color: vars.$menu-bgcolor;
+
+  &__list {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 60px;
+  }
+
+  &__item {
+    font-size: 22px;
+    margin-bottom: 35px;
+  }
+
+  &__phone {
+    letter-spacing: 0;
+    margin-bottom: 20px;
+  }
+
+  &__call {
+    font-size: 12px;
+    text-decoration: none;
+    color: vars.$main-font;
+
+    // border-bottom: 1px solid vars.$main-font;
+
+    &::after {
+      content: '';
+      display: block;
+      background-color: vars.$main-font;
+      margin-top: 10px;
+      width: 120px;
+      height: 1px;
+    }
+  }
+}
