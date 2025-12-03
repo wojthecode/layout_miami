@@ -1,10 +1,21 @@
 @use '../utils/vars';
 
 .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
   min-height: 100vh;
   padding: 0 20px;
   box-sizing: border-box;
   background-color: vars.$menu-bgcolor;
+
+  transition: transform 500ms ease-in-out;
+
+  &:target {
+    transform: translateY(0);
+  }
 
   &__list {
     text-transform: uppercase;
@@ -15,7 +26,20 @@
 
   &__item {
     font-size: 22px;
-    margin-bottom: 35px;
+    margin-bottom: 26px;
+  }
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    color: vars.$main-font;
+    padding-bottom: 8px;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      cursor: default;
+      border-bottom: 1px solid vars.$main-font;
+    }
   }
 
   &__phone {
@@ -27,16 +51,12 @@
     font-size: 12px;
     text-decoration: none;
     color: vars.$main-font;
+    padding-bottom: 8px;
+    border-bottom: 1px solid transparent;
 
-    // border-bottom: 1px solid vars.$main-font;
-
-    &::after {
-      content: '';
-      display: block;
-      background-color: vars.$main-font;
-      margin-top: 10px;
-      width: 120px;
-      height: 1px;
+    &:hover {
+      cursor: default;
+      border-bottom: 1px solid vars.$main-font;
     }
   }
 }

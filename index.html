@@ -14,7 +14,7 @@
     <title>BOSE</title>
     <link
       rel="stylesheet"
-      href="src/styles/styles.css"
+      href="src/styles/styles.scss"
     />
     <script
       src="src/scripts/main.js"
@@ -22,9 +22,9 @@
     ></script>
   </head>
   <body>
-    <header class="header" id="top">
+    <header class="header" id="home">
       <nav class="navigation">
-        <a href="#">
+        <a href="#home">
           <img
             src="./src/images/logo.png"
             alt="BOSE logo"
@@ -32,21 +32,12 @@
           />
         </a>
 
-        <div class="navigation__menu">
-          <a href="#">
-            <img
-              src="./src/images/phone.svg"
-              alt="contact"
-              class="navigation__menu--icon"
-            />
+        <div class="navigation__icons">
+          <a href="#" class="navigation__link navigation__link--phone">
           </a>
 
-          <a href="#">
-            <img
-              src="/src/images/menu.svg"
-              alt="menu"
-              class="navigation__menu--icon"
-            />
+          <a href="#menu" class="navigation__link navigation__link--burger">
+            <span class="navigation__label">Open menu</span>
           </a>
         </div>
       </nav>
@@ -58,9 +49,9 @@
       </h1>
     </header>
 
-    <div class="menu">
+    <div class="menu" id="menu">
       <nav class="navigation">
-        <a href="#">
+        <a href="#home">
           <img
             src="./src/images/logo.png"
             alt="BOSE logo"
@@ -68,30 +59,27 @@
           />
         </a>
 
-        <a href="#">
-          <img
-            src="/src/images/cross.svg"
-            alt="menu"
-            class="navigation__menu--icon"
-          />
-        </a>
+        <div class="navigation__icons">
+          <a href="#home" class="navigation__link navigation__link--cross">
+          </a>
+        </div>
       </nav>
 
       <ul class="menu__list">
         <li class="menu__item">
-          <a href="#top" class="main__link">Home</a>
+          <a href="#home" class="menu__link">Home</a>
         </li>
         <li class="menu__item">
-          <a href="#recommended" class="main__link">recommended</a>
+          <a href="#recommended" class="menu__link">recommended</a>
         </li>
         <li class="menu__item">
-          <a href="#categories" class="main__link">categories</a>
+          <a href="#categories" class="menu__link">categories</a>
         </li>
         <li class="menu__item">
-          <a href="#buy" class="main__link">How to buy</a>
+          <a href="#buy" class="menu__link">How to buy</a>
         </li>
         <li class="menu__item">
-          <a href="#contact" class="main__link">Contacts</a>
+          <a href="#contact" class="menu__link">Contacts</a>
         </li>
         <p class="menu__phone">+1 234 5555-55-55</p>
         <a href="#" class="menu__call">call to order</a>
@@ -183,7 +171,7 @@
           </p>
         </div>
 
-        <a href="#" class="main__button main__button--wide">View all</a>
+        <a href="#" class="button button--wide">View all</a>
       </section>
 
       <section class="main__section main__section--buy-direct" id="buy">
@@ -204,6 +192,7 @@
         <h2 class="title title__main">Contact us</h2>
 
         <form action="#" class="contact">
+          <label for="name" class="contact__label">Name</label>
           <input
             type="text"
             name="name"
@@ -212,6 +201,7 @@
             class="contact__input"
           />
 
+          <label for="email" class="contact__label">Email</label>
           <input
             type="email"
             name="email"
@@ -220,6 +210,7 @@
             class="contact__input"
           />
 
+          <label for="message" class="contact__label">Message</label>
           <textarea
             name="message"
             id="message"
@@ -227,7 +218,10 @@
             class="contact__input contact__input--message"
           ></textarea>
 
-          <button class="main__button main__button--wide contact__input--button">Send</button>
+          <label for="send" class="contact__label">Send</label>
+          <button
+            id="send"
+            class="button button--wide contact__input--button">Send</button>
         </form>
 
         <address class="address">

@@ -9,6 +9,12 @@
   font-size: 14px;
   align-items: center;
 
+  &__label {
+    &:not(:focus, :active) {
+      @include visually-hidden;
+    }
+  }
+
   &__input {
     box-sizing: border-box;
     width: 100%;
