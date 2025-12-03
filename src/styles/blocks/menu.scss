@@ -7,7 +7,7 @@
   right: 0;
   transform: translateY(-100%);
   min-height: 100vh;
-  padding: 0 20px;
+  padding: 25px 20px 0;
   box-sizing: border-box;
   background-color: vars.$menu-bgcolor;
 
@@ -58,5 +58,11 @@
       cursor: default;
       border-bottom: 1px solid vars.$main-font;
     }
+  }
+}
+
+@media screen and (min-width: 744px) {
+  .menu {
+    padding: 30px 74px 60px;
   }
 }

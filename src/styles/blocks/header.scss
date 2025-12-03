@@ -1,6 +1,6 @@
 .header {
   min-height: 100vh;
-  padding: 0 20px 60px;
+  padding: 25px 20px 40px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -10,4 +10,10 @@
   background-size: cover;
   background-position: center;
   transition: background-image;
+}
+
+@media screen and (min-width: 744px) {
+  .header {
+    padding: 30px 74px 60px;
+  }
 }
