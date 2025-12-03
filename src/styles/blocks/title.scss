@@ -13,7 +13,7 @@
     font-style: normal;
     text-align: center;
 
-    &--left {
+    &--buy {
       text-align: left;
       align-self: flex-start;
     }
@@ -26,6 +26,22 @@
       width: 48px;
       height: 58px;
       background-image: url('../images/sound_waves.svg');
+    }
+  }
+}
+
+@media screen and (min-width: 744px) {
+  .title {
+    font-size: 40px;
+
+    &__main {
+      &--buy {
+        margin-top: 15px;
+        grid-area: 1 / 1 / 1 / 4;
+      }
+      &--contact {
+        grid-area: 1 / 1 / 1 / -1;
+      }
     }
   }
 }

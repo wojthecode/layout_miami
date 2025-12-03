@@ -16,7 +16,7 @@
     flex-direction: column;
     align-items: center;
 
-    &--buy-direct {
+    &--buy {
       gap: 20px;
     }
 
@@ -29,6 +29,8 @@
     color: vars.$main-font;
     text-decoration: none;
 
+    // font-size: 22px;
+
     &:hover {
       text-decoration: underline;
     }
@@ -38,5 +40,23 @@
 @media screen and (min-width: 744px) {
   .main {
     padding: 74px;
+
+    &__section {
+      max-width: 600px;
+      gap: 65px;
+      &--buy,
+      &--contact {
+        align-self: center;
+        align-items: flex-start;
+        display: grid;
+        grid-template: repeat(2, auto) / repeat(6, 80px);
+        gap: 20px 24px;
+        padding: 55px 0;
+      }
+      &--contact {
+        row-gap: 40px;
+        padding-bottom: 35px;
+      }
+    }
   }
 }

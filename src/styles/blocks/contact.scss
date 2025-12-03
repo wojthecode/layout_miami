@@ -52,3 +52,9 @@
     }
   }
 }
+
+@media screen and (min-width: 744px) {
+  .contact {
+    grid-area: 2 / 1 / 2 / 4;
+  }
+}
