@@ -14,7 +14,7 @@
     <title>BOSE</title>
     <link
       rel="stylesheet"
-      href="src/styles/styles.scss"
+      href="src/styles/styles.css"
     />
     <script
       src="src/scripts/main.js"
@@ -22,38 +22,102 @@
     ></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="top">
+      <nav class="navigation">
+        <a href="#">
+          <img
+            src="./src/images/logo.png"
+            alt="BOSE logo"
+            class="navigation__logo"
+          />
+        </a>
 
-      <img
-        src="./src/images/sound_waves.svg"
-        alt="sound waves"
-        class="header__image"
-      />
+        <div class="navigation__menu">
+          <a href="#">
+            <img
+              src="./src/images/phone.svg"
+              alt="contact"
+              class="navigation__menu--icon"
+            />
+          </a>
 
-      <h1 class="title">
+          <a href="#">
+            <img
+              src="/src/images/menu.svg"
+              alt="menu"
+              class="navigation__menu--icon"
+            />
+          </a>
+        </div>
+      </nav>
+
+      <h1 class="title title--header">
         The world shades.
         <br>
         Your music shines.
       </h1>
-
     </header>
 
-    <main class="main">
-      <h2 class="title title--main">
-        Recommended
-      </h2>
+    <div class="menu">
+      <nav class="navigation">
+        <a href="#">
+          <img
+            src="./src/images/logo.png"
+            alt="BOSE logo"
+            class="navigation__logo"
+          />
+        </a>
 
-      <section class="main__section main__section--recomendet">
+        <a href="#">
+          <img
+            src="/src/images/cross.svg"
+            alt="menu"
+            class="navigation__menu--icon"
+          />
+        </a>
+      </nav>
+
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#top" class="main__link">Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="#recommended" class="main__link">recommended</a>
+        </li>
+        <li class="menu__item">
+          <a href="#categories" class="main__link">categories</a>
+        </li>
+        <li class="menu__item">
+          <a href="#buy" class="main__link">How to buy</a>
+        </li>
+        <li class="menu__item">
+          <a href="#contact" class="main__link">Contacts</a>
+        </li>
+        <p class="menu__phone">+1 234 5555-55-55</p>
+        <a href="#" class="menu__call">call to order</a>
+      </ul>
+
+
+    </div>
+
+    <main class="main">
+      <section class="main__section" id="recommended">
+        <h2 class="title title__main">
+          Recommended
+        </h2>
+
         <div class="product">
           <img
             src="./src/images/products/portable_smart.png"
             alt="Bose portable Smart speaker"
             class="product__image"
           />
-          <a href="#" class="product__link">
-          Bose portable Smart speaker
-          </a>
-          <p class="product__description">Smart home</p>
+          <p class="product__name">
+            <a href="#" class="main__link">
+            Bose portable Smart speaker
+            </a>
+          </p>
+          <p>Smart home</p>
           <p class="product__price">$ 399.00</p>
         </div>
 
@@ -63,10 +127,12 @@
             alt="SoundLink Flex Bluetooth speaker"
             class="product__image"
           />
-          <a href="#" class="product__link">
-          SoundLink Flex Bluetooth speaker
-          </a>
-          <p class="product__description">Portable bluetooth</p>
+          <p class="product__name">
+            <a href="#" class="main__link">
+            SoundLink Flex Bluetooth speaker
+            </a>
+          </p>
+          <p>Portable bluetooth</p>
           <p class="product__price">$ 149.00</p>
         </div>
 
@@ -76,27 +142,107 @@
             alt="SoundLink Color Bluetooth"
             class="product__image"
           />
-          <a href="#" class="product__link">
-          SoundLink Color Bluetooth
-          </a>
-          <p class="product__description">Portable bluetooth</p>
+          <p class="product__name">
+            <a href="#" class="main__link">
+            SoundLink Color Bluetooth
+            </a>
+          </p>
+          <p>Portable bluetooth</p>
           <p class="product__price">$ 129.00</p>
         </div>
       </section>
 
-      <!-- <h2 class="title title--main">
-        Browse Bose
-        <br>
-        products by category
-      </h2>
+      <section class="main__section" id="categories">
+        <h2 class="title title__main">
+          Browse Bose
+          <br>
+          products by category
+        </h2>
 
-      <section class="main__section main__section--categories">
+        <div class="categories">
+          <div class="categories__picture categories__picture--01 categories__picture--left"></div>
+          <div class="categories__picture categories__picture--02 categories__picture--right"></div>
+          <p class="categories__name">
+            <a href="#" class="main__link">Headphones &amp; earbuds</a>
+          </p>
+        </div>
+
+        <div class="categories">
+          <div class="categories__picture categories__picture--03 categories__picture--left"></div>
+          <div class="categories__picture categories__picture--04 categories__picture--right"></div>
+          <p class="categories__name">
+            <a href="#" class="main__link">Speakers</a>
+          </p>
+        </div>
+
+        <div class="categories">
+          <div class="categories__picture categories__picture--05 categories__picture--left"></div>
+          <div class="categories__picture categories__picture--06 categories__picture--right"></div>
+          <p class="categories__name">
+            <a href="#" class="main__link">Audio sunglasses</a>
+          </p>
+        </div>
+
+        <a href="#" class="main__button main__button--wide">View all</a>
+      </section>
+
+      <section class="main__section main__section--buy-direct" id="buy">
+        <h2 class="title title__main title__main--left">Why buy direct<br>from Bose</h2>
+
+        <ul class="buy-direct">
+          <li class="buy-direct buy-direct__item">Free 2-day shipping and returns</li>
+          <li class="buy-direct buy-direct__item">90-day risk-free trial</li>
+          <li class="buy-direct buy-direct__item">World class customer service</li>
+          <li class="buy-direct buy-direct__item">My Bose account management</li>
+        </ul>
 
 
+        <p class="buy-direct buy-direct--text">A great product is more than what’s in the box. It’s a promise of premium performance, world-class support, and everything you expect from a trusted brand. It’s just one of many reasons why you’ll shop with confidence on Bose.com.</p>
+      </section>
 
-      </section> -->
+      <section class="main__section main__section--contact" id="contact">
+        <h2 class="title title__main">Contact us</h2>
 
+        <form action="#" class="contact">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            class="contact__input"
+          />
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            class="contact__input"
+          />
+
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Message"
+            class="contact__input contact__input--message"
+          ></textarea>
+
+          <button class="main__button main__button--wide contact__input--button">Send</button>
+        </form>
+
+        <address class="address">
+          <h3 class="address__label">Phone</h3>
+          <p class="address__content">+1 234 5555-55-55</p>
+          <h3 class="address__label">Email</h3>
+          <p class="address__content">hello@miami.com</p>
+          <h3 class="address__label">Address</h3>
+          <p class="address__content">400 first ave.<br>suite 700<br>Minneapolis, MN 55401</p>
+        </address>
+
+      </section>
     </main>
+
+    <footer class="footer"></footer>
 
 
   </body>
