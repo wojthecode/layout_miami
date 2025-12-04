@@ -1,8 +1,12 @@
 @use '../utils/vars';
 
-.product {
+.recomendet {
   max-width: 400px;
   text-decoration: none;
+
+  @include for-desktop {
+    grid-column: span 4;
+  }
 
   &__image {
     width: 100%;

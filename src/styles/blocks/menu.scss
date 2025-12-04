@@ -1,4 +1,5 @@
 @use '../utils/vars';
+@use '../utils/mixins';
 
 .menu {
   position: fixed;
@@ -12,6 +13,14 @@
   background-color: vars.$menu-bgcolor;
 
   transition: transform 500ms ease-in-out;
+
+  @include for-mobile-wide {
+    padding: 30px 74px 60px;
+
+    @include for-desktop {
+      padding: 35px 120px 70px;
+    }
+  }
 
   &:target {
     transform: translateY(0);
@@ -58,11 +67,5 @@
       cursor: default;
       border-bottom: 1px solid vars.$main-font;
     }
-  }
-}
-
-@media screen and (min-width: 744px) {
-  .menu {
-    padding: 30px 74px 60px;
   }
 }

@@ -10,10 +10,12 @@
   background-size: cover;
   background-position: center;
   transition: background-image;
-}
 
-@media screen and (min-width: 744px) {
-  .header {
+  @include for-mobile-wide {
     padding: 30px 74px 60px;
+
+    @include for-desktop {
+      padding: 35px 120px 70px;
+    }
   }
 }

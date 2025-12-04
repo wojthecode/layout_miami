@@ -9,6 +9,14 @@
   font-size: 14px;
   align-items: center;
 
+  @include for-mobile-wide {
+    grid-area: 2 / 1 / 2 / 4;
+
+    @include for-desktop {
+      grid-area: 2 / 1 / 2 / 7;
+    }
+  }
+
   &__label {
     &:not(:focus, :active) {
       @include visually-hidden;
@@ -50,11 +58,5 @@
       border: 1px solid vars.$main-font;
       outline: none;
     }
-  }
-}
-
-@media screen and (min-width: 744px) {
-  .contact {
-    grid-area: 2 / 1 / 2 / 4;
   }
 }
