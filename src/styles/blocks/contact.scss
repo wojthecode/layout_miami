@@ -1,4 +1,5 @@
 @use '../utils/vars';
+@use '../utils/mixins' as *;
 
 .contact {
   box-sizing: border-box;

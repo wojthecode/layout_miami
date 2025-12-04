@@ -1,14 +1,15 @@
-@import './utils';
-@import './blocks';
+@use './utils/vars';
+@use './utils';
+@use './blocks';
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background: $main-bgcolor;
+  background: vars.$main-bgcolor;
   font-family: Inter, Arial, Helvetica, sans-serif;
-  color: $main-font;
+  color: vars.$main-font;
   font-size: 16px;
   font-weight: 400;
 }
