@@ -24,10 +24,15 @@
     margin: 8px 0;
   }
 
-  &__content {
+  &__link {
     color: vars.$contact-content;
     line-height: 22px;
     font-size: 16px;
     margin-bottom: 16px;
+    text-decoration: none;
+
+    &:hover {
+      color: vars.$main-font;
+    }
   }
 }

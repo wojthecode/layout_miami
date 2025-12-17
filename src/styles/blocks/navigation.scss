@@ -29,6 +29,18 @@
     }
   }
 
+  &__label {
+    &:not(:focus, :active) {
+      @include visually-hidden;
+    }
+
+    &--phone {
+      line-height: 16px;
+      white-space: nowrap;
+      transform: translateX(-160px);
+    }
+  }
+
   &__link {
     display: block;
     padding: 0 3px;
@@ -53,14 +65,12 @@
       display: flex;
       align-items: center;
 
+      &:not(:hover) .navigation__label--phone {
+        @include visually-hidden;
+      }
+
       @include for-mobile-wide {
         height: 24px;
-
-        @include for-desktop {
-          &:not(:hover) .navigation__label--phone {
-            @include visually-hidden;
-          }
-        }
       }
     }
 
@@ -90,17 +100,6 @@
         height: 22px;
         padding: 0 5px;
       }
-    }
-  }
-
-  &__label {
-    &:not(:focus, :active) {
-      @include visually-hidden;
-    }
-    &--phone {
-      line-height: 16px;
-      white-space: nowrap;
-      transform: translateX(-160px);
     }
   }
 }

@@ -7,6 +7,8 @@
   left: 0;
   right: 0;
   transform: translateY(-100%);
+
+  // overflow: auto;
   min-height: 100vh;
   padding: 25px 20px 0;
   box-sizing: border-box;
@@ -24,6 +26,11 @@
 
   &:target {
     transform: translateY(0);
+
+    // & ~ body {
+    //   height: 100vh;
+    //   overflow: hidden;
+    // }
   }
 
   &__list {
