@@ -200,6 +200,7 @@
             id="name"
             placeholder="Name"
             class="contact__input"
+            required
           />
 
           <label for="email" class="contact__label">Email</label>
@@ -209,6 +210,7 @@
             id="email"
             placeholder="Email"
             class="contact__input"
+            required
           />
 
           <label for="message" class="contact__label">Message</label>
@@ -217,21 +219,32 @@
             id="message"
             placeholder="Message"
             class="contact__input contact__input--message"
+            required
           ></textarea>
 
           <label for="send" class="contact__label">Send</label>
           <button
+            type="submit"
             id="send"
             class="button contact__input--button">Send</button>
         </form>
 
         <address class="address">
           <h3 class="address__label">Phone</h3>
-          <p class="address__content">+1 234 5555-55-55</p>
+          <a href="tel:+1 234 5555-55-55" class="address__link">
+            +1 234 5555-55-55
+          </a>
           <h3 class="address__label">Email</h3>
-          <p class="address__content">hello@miami.com</p>
+          <a href="mailto:hello@miami.com" class="address__link">
+            hello@miami.com
+          </a>
           <h3 class="address__label">Address</h3>
-          <p class="address__content">400 first ave.<br>suite 700<br>Minneapolis, MN 55401</p>
+          <a href="http://maps.google.com/?q=400 first ave, suite 700, Minneapolis, MN 55401"
+            class="address__link"
+            target="_blank"
+          >
+            400 first ave.<br>suite 700<br>Minneapolis, MN 55401
+          </a>
         </address>
 
       </section>
